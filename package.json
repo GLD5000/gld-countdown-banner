@@ -1,7 +1,6 @@
 {
   "name": "@gld5000-react/vite-lib",
   "version": "0.0.0",
-  "private": true,
   "description": "A Vite React TS UI Library template",
   "keywords": [
     "UI",
@@ -56,6 +55,6 @@
     "react-dom": "^19.1.0"
   },
   "dependencies": {
-    "@gld5000-js/countdown": "^1.x"
+    "@gld5000-js/countdown": "^1.0.20"
   }
 }
