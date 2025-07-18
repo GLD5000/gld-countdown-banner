@@ -1,5 +1,3 @@
-import React from 'react';
-
 function capitaliseFirstLetter(stringIn: string) {
     const first = `${stringIn[0]}`.toUpperCase();
     const rest = stringIn.slice(1).toLowerCase();
