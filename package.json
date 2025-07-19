@@ -55,6 +55,8 @@
     "react-dom": "^19.1.0"
   },
   "dependencies": {
-    "@gld5000-js/countdown": "^1.0.20"
+    "@gld5000-js/countdown": "^1.x",
+    "@tailwindcss/vite": "^4.1.11",
+    "tailwindcss": "^4.1.11"
   }
 }

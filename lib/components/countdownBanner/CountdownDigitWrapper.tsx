@@ -10,5 +10,5 @@ export default function CountdownDigitWrapper({
     return <CountdownDigits key={`${index}digits`} value={value} name={name} />;
   });
 
-  return <div className="flex flex-wrap w-full max-w-fit gap-2">{digits}</div>;
+  return <div className="flex flex-wrap w-full max-w-fit gap-2 text-black">{digits}</div>;
 }
