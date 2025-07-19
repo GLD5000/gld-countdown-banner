@@ -1,10 +1,28 @@
 'use client';
-import { countdownString } from '@gld5000-js/countdown';
+import { countdownString, makeTimer } from '@gld5000-js/countdown';
 import CountdownCopy from './CountdownCopy';
 import CountdownDigitWrapper from './CountdownDigitWrapper';
 import CtaButtonV2 from './CtaButtonV2';
+import { useState, useEffect } from 'react';
+const timer = makeTimer(`2025-${`${new Date().getMonth()+2}`}-2 23:59:59`);
 
-export default function CountdownBanner({linkIn}:{linkIn:string}) {
+export default function CountdownBanner({ linkIn }: { linkIn: string }) {
+        const [time, setTime] = useState<Record<string, number>>();
+    useEffect(() => {
+        let run = true;
+        if (run) {
+            setTime(timer());
+            setInterval(() => {
+                setTime(timer());
+            }, 1000);
+        }
+
+        return () => {
+            run = false;
+        };
+    }, [setTime]);
+    if (!time) return null;
+
 
     return (
         <>
@@ -24,7 +42,7 @@ export default function CountdownBanner({linkIn}:{linkIn:string}) {
                         }
                     />
 
-                    <CountdownDigitWrapper />
+                    <CountdownDigitWrapper time={time} />
                     <CtaButtonV2
                         className="block transition box-border relative h-fit py-[0.3em] px-[3em] m-auto text-center w-fit rounded-xl bg-white text-black group-hover:bg-black group-focus:bg-black group-hover:text-white group-focus:text-white border border-current border-solid font-cta text-base"
                         cta="Shop Now"
