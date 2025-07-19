@@ -32,6 +32,7 @@ export default function CountdownBanner({linkIn}:{linkIn:string}) {
                         cta="Shop Loose Tea"
                     />
                 </a>
+                
             </section>
             {/* <div data-script={countdownString}></div> */}
         </>
