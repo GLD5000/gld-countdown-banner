@@ -27,7 +27,7 @@ export default function CountdownBanner({ linkIn }: { linkIn: string }) {
     return (
         <>
             <section
-                className="w-full h-auto box-border bg-[#ffd883] group p-0"
+                className="w-full h-auto box-border bg-[#ffd883] group p-0 min-w-[320px]"
             >
                 <a
                     href={linkIn}
