@@ -1,7 +1,7 @@
 {
   "name": "@gld5000-react/countdown-banner",
   "version": "0.0.1",
-  "description": "A Vite React TS UI Library template",
+  "description": "A countdown banner for React",
   "keywords": [
     "UI",
     "Library",

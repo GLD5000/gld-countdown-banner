@@ -1,6 +1,6 @@
 # [@gld5000-react/countdown-banner](https://www.npmjs.com/package/@gld5000-react/countdown-banner)
 
-A Vite React TS UI Library template
+A countdown banner for React
 
 ## Install
 
