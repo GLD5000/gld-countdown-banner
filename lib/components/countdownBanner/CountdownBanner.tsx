@@ -1,5 +1,5 @@
 'use client';
-import { countdownString, makeTimer } from '@gld5000-js/countdown';
+import { makeTimer } from '@gld5000-js/countdown';
 import CountdownCopy from './CountdownCopy';
 import CountdownDigitWrapper from './CountdownDigitWrapper';
 import CtaButtonV2 from './CtaButtonV2';
@@ -25,7 +25,6 @@ export default function CountdownBanner({ linkIn }: { linkIn: string }) {
 
 
     return (
-        <>
             <section
                 className="w-full h-auto box-border bg-[#ffd883] group p-0 min-w-[320px]"
             >
@@ -50,7 +49,5 @@ export default function CountdownBanner({ linkIn }: { linkIn: string }) {
                 </a>
                 
             </section>
-            <div data-script={countdownString}></div>
-        </>
     );
 }
